@@ -1,6 +1,7 @@
 // import _ from 'lodash';
 import { cube } from './math.js';
 import printMe from './print.js';
+import './index.scss'
 
 function component() {
     // var element = document.createElement('div');
@@ -8,9 +9,12 @@ function component() {
 
     var element = document.createElement('pre');
 
+    element.classList = 'body'
+
     element.innerHTML = [ 
         'Hello webpack!',
-        '5 cubed is equal to ' + cube(5)
+        '5 cubed is equal to ' + cube(5),
+        '<div class="text">Hello</div>'
     ].join('\n\n');
   
     // 字符串拼接
